@@ -1,0 +1,63 @@
+/**
+*
+* Galeria | lliure 4.10
+*
+* @Versão 4.0
+* @Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
+* @Colaborador Rodrigo Dechen <rodrigo@grapestudio.com.br>
+* @Entre em contato com o desenvolvedor <jomadee@lliure.com.br> http://www.newsmade.com.br/
+* @Licença http://opensource.org/licenses/gpl-license.php GNU Public License
+*
+*/
+
+div.videos{
+	margin: 0 -12px 0 -4px;
+	float: left;
+	}
+	
+	div.videos .mensagem{
+		margin: 0 4px;
+		}
+		
+	div.videos div.galdiv{
+		float:left;
+		margin: 4px;
+		padding: 3px;
+		border: 1px solid #D3D3D3;
+		position: relative;
+		float: left;
+		border-radius: 3px;
+		clear: none;
+		}
+		
+		div.videos div.galdiv.capa{
+			background-color: #fa0;
+			}
+		
+		div.videos div.galdiv .img{
+			float: left;
+			width: 105px;
+			}
+
+		div.videos div.galdiv .divblock{
+			display: none;
+			position: absolute;
+			left: 3px;
+			right: 3px;
+			}
+
+		div.videos div.galdiv .trash{
+			position: absolute;
+			top: 3px;
+			right: 3px;
+			}
+			
+		div.videos div.galdiv .favorite{
+			position: absolute;
+			top: 3px;
+			left: 3px;
+			}
+
+			div.videos div.galdiv.capa .favorite{
+				display: none;
+				}
