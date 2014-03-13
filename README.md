@@ -1,4 +1,5 @@
-galeria
+#Galeria
 =======
+*versão 4.0*
 
-Galeria
+Testado no lliure 6.x e 5.x
