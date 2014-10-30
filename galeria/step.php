@@ -3,7 +3,7 @@
 *
 * Galeria | lliure 4.10
 *
-* @Versão 4.0
+* @Versão 4.1
 * @Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
 * @Colaborador Rodrigo Dechen <rodrigo@grapestudio.com.br>
 * @Entre em contato com o desenvolvedor <jomadee@lliure.com.br> http://www.newsmade.com.br/

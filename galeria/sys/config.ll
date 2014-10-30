@@ -16,4 +16,5 @@
 
 <configuracoes>
 	<nome>Galeria</nome>
+	<seguranca>public</seguranca>	
 </configuracoes>

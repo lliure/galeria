@@ -3,7 +3,7 @@
 *
 * Galeria | lliure 4.10
 *
-* @Versão 4.0
+* @Versão 4.1
 * @Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
 * @Colaborador Rodrigo Dechen <rodrigo@grapestudio.com.br>
 * @Entre em contato com o desenvolvedor <jomadee@lliure.com.br> http://www.newsmade.com.br/
@@ -19,9 +19,19 @@ $dados = mysql_fetch_array(mysql_query($consulta));
 	<form method="post" class="form" action="<?php echo 'onserver.php'.$pluginHome.'&p=step&album='.$dados['id'].'&gal='.$dados['galeria']?>" id="formula" enctype="multipart/form-data">
 		<fieldset>
 			<div>
-				<label>Título</label>
-				<input type="text" value="<?php echo (isset($dados['nome'])?$dados['nome']:'')?>" name="nome" />
-				<span class="ex">Este é o titulo que da sua Galeria. <strong>Campo obrigatório</strong></span>
+				<table>
+					<tr>
+						<td>
+							<label>Título</label>
+							<input type="text" value="<?php echo (isset($dados['nome'])?$dados['nome']:'')?>" name="nome" />
+							<span class="ex">Este é o titulo que da sua Galeria. <strong>Campo obrigatório</strong></span>
+						</td>
+						<td style="width: 100px">
+							<label>Data</label>
+							<input type="text" class="data" value="<?php echo (isset($dados['data'])? date('d/m/Y', $dados['data']) : '' ); ?>" name="data" />
+						</td>
+					</tr>
+				</table>
 			</div>
 		</fieldset>
 		
@@ -84,4 +94,9 @@ $dados = mysql_fetch_array(mysql_query($consulta));
 	</form>	
 </div>
 
+<script type="text/javascript" src="js/jquery.maskedinput.js"></script>
+<script>
+	ajustaForm();
+	$('.data').mask('99/99/9999');
+</script>
 
