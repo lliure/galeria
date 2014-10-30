@@ -9,4 +9,5 @@ Galeria
 > @ Licença http://opensource.org/licenses/gpl-license.php GNU Public License <br>
 
 - 4.1 
+
 [update] Acrescentado campo para editar a data do album
