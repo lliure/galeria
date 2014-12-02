@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* Galeria | lliure 4.10
+* Galeria | lliure >= 4.10
 *
-* @Versão 4.1
+* @Versão 4.2
 * @Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
 * @Colaborador Rodrigo Dechen <rodrigo@grapestudio.com.br>
 * @Entre em contato com o desenvolvedor <jomadee@lliure.com.br> http://www.newsmade.com.br/
@@ -20,6 +20,8 @@ switch($opt[2]){
 		
 		$retorno = isset($_POST['salvar'])? 'salvar': 'salvar-edit';
 		unset($_POST['salvar'], $_POST['salvar-edit'], $_POST['video']);
+		
+		$_POST['data'] = jf_dunix($_POST['data']);
 		
 		jf_update($pluginTable, $_POST, array('id' => $id));
 		
