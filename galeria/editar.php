@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* Galeria | lliure 4.10
+* Galeria
 *
-* @Versão 4.1
+* @Versão 5.0
 * @Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
 * @Colaborador Rodrigo Dechen <rodrigo@grapestudio.com.br>
 * @Entre em contato com o desenvolvedor <jomadee@lliure.com.br> http://www.newsmade.com.br/
@@ -87,10 +87,11 @@ $dados = mysql_fetch_array(mysql_query($consulta));
 		
 			<?php
 		}?>
-		
-		<span class="botao"><a href="<?php echo $backReal?>">Voltar</a></span>
-		<span class="botao"><button type="submit" name="salvar">Salvar</button></span>
-		<span class="botao"><button type="submit" name="salvar-edit">Salvar e continuar editando</button></span>
+		<div class="botoes">
+			<a href="<?php echo $backReal?>">Voltar</a>
+			<button type="submit" name="salvar" class="confirm">Salvar</button>
+			<button type="submit" name="salvar-edit">Salvar e continuar editando</button>
+		</div>
 	</form>	
 </div>
 

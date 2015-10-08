@@ -1,12 +1,19 @@
 Galeria
 -------
 
-> @ Versão 4.0 
-> @ Compatibilidade **lliure** > 4.10
+> @ Versão 5
+> @ Compatibilidade **lliure** > 7
 > @ Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
 > @ Colaborador Rodrigo Dechen <rodrigo@grapestudio.com.br> 
 > @ Entre em contato com o desenvolvedor <jomadee@lliure.com.br>
 > @ Licença http://opensource.org/licenses/gpl-license.php GNU Public License
+
+- 5.0
+[update] Atualizações para compatibilidade com lliure 8
+
+- 4.2
+[bug] Erro de data na gravação
+
 
 - 4.1 
 [update] Acrescentado campo para editar a data do album

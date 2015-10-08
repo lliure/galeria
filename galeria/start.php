@@ -1,9 +1,9 @@
 <?php
 /**
 *
-* Galeria | lliure 4.10
+* Galeria
 *
-* @Versão 4.0
+* @Versão 5.0
 * @Desenvolvedor Jeison Frasson <jomadee@lliure.com.br>
 * @Colaborador Rodrigo Dechen <rodrigo@grapestudio.com.br>
 * @Entre em contato com o desenvolvedor <jomadee@lliure.com.br> http://www.newsmade.com.br/
@@ -24,26 +24,26 @@ if(isset($_GET['gal'])){
 }
 
 /**** barra superior */
-$botoes[] = array('href' => $backReal, 'img' => $_ll['tema']['icones'].'br_prev.png', 'title' => $backNome);
+$botoes[] = array('href' => $backReal, 'fa' => 'fa-chevron-left', 'title' => $backNome);
 	
 if(!isset($_GET['id'])){
 	if(!isset($_GET['gal'])){
 		$botoes[] = array(
 			'href' => 'onserver.php'.$pluginHome.'&p=new&ac=gal',
-			'img' => $_ll['tema']['icones'].'folder.png',
+			'fa' => 'fa-folder',
 			'title' => 'Criar galeria',
 			'attr' => 'class="criar"'
 		);
 	} else {
 		$botoes[] = array(
 			'href' => 'onserver.php'.$pluginHome.'&p=new&ac=abu&tipo=foto&gal='.$linkGal,
-			'img' => $_ll['tema']['icones'].'picture.png',
+			'fa' => 'fa-picture-o',
 			'title' => 'Criar álbum de Fotos',
 			'attr' => 'class="criar"'
 		);
 		$botoes[] = array(
 			'href' => 'onserver.php'.$pluginHome.'&p=new&ac=abu&tipo=video&gal='.$linkGal,
-			'img' => $_ll['tema']['icones'].'movie.png',
+			'fa' => 'fa-youtube',
 			'title' => 'Criar álbum de Videos',
 			'attr' => 'class="criar"'
 		);
@@ -56,8 +56,12 @@ echo app_bar('Galeria de fotos', $botoes);
 ?>
 <script type="text/javascript">
 	$().ready(function() {
-		$('.criar').jfbox({abreBox: false},function(){
-			navigi_start();
+		$('.criar').click(function(){		
+			ll_load($(this).attr('href'), function(){
+				navigi_start();
+			});
+			
+			return false;
 		});
 	});
 </script>
@@ -67,7 +71,7 @@ if(isset($_GET['acoes'])){
 	$gAcoes = $_GET['acoes'];
 	switch($gAcoes){
 		case 'editar':
-			require_once('edit.php');
+			require_once('editar.php');
 		break;
 		
 		case 'rfotos':
