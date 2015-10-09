@@ -5,7 +5,7 @@
 CREATE TABLE IF NOT EXISTS `ll_galeria` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `tipo` enum('0','1','2') DEFAULT '0',
-  `nome` varchar(200) NOT NULL,
+  `nome` VARCHAR(200) NULL DEFAULT NULL,
   `capa` int(11) DEFAULT NULL,
   `galeria` int(5) DEFAULT NULL,
   `data` varchar(20) DEFAULT NULL,

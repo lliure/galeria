@@ -11,9 +11,5 @@ Galeria
 - 5.0
 [update] Atualizações para compatibilidade com lliure 8
 
-- 4.2
-[bug] Erro de data na gravação
-
-
 - 4.1 
 [update] Acrescentado campo para editar a data do album
