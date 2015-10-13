@@ -18,7 +18,7 @@ $navegador = new navigi();
 $navegador->tabela = $pluginTable;
 
 //Definendo a query para consulta
-$navegador->query = 'select *,nome as idd, if(nome = "", "NULL", nome) as nome from ' . $navegador->tabela . $filtro . ' order by idd asc';
+$navegador->query = 'select *,nome as idd, if(nome is null, "NULL", nome) as nome from ' . $navegador->tabela . $filtro . ' order by idd asc';
 
 //Define como será a exibição. por ser "lista" ou "icone"
 //$navegador->exibicao = 'icone';
