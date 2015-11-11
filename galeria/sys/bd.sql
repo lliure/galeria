@@ -2,15 +2,20 @@
 -- Estrutura da tabela `ll_galeria`
 --
 
-CREATE TABLE IF NOT EXISTS `ll_galeria` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
-  `tipo` enum('0','1','2') DEFAULT '0',
-  `nome` VARCHAR(200) NULL DEFAULT NULL,
-  `capa` int(11) DEFAULT NULL,
-  `galeria` int(5) DEFAULT NULL,
-  `data` varchar(20) DEFAULT NULL,
-  PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=15 ;
+CREATE TABLE `ll_galeria` (
+	`id` INT(11) NOT NULL AUTO_INCREMENT,
+	`tipo` ENUM('0','1','2') NULL DEFAULT '0',
+	`nome` VARCHAR(200) NULL DEFAULT NULL,
+	`capa` INT(11) NULL DEFAULT NULL,
+	`galeria` INT(5) NULL DEFAULT NULL,
+	`data` VARCHAR(20) NULL DEFAULT NULL,
+	PRIMARY KEY (`id`)
+)
+COLLATE='latin1_swedish_ci'
+ENGINE=InnoDB
+AUTO_INCREMENT=1
+;
+
 
 --
 -- Estrutura da tabela `ll_galeria_fotos`
