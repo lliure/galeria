@@ -6,6 +6,7 @@ CREATE TABLE `ll_galeria` (
 	`id` INT(11) NOT NULL AUTO_INCREMENT,
 	`tipo` ENUM('0','1','2') NULL DEFAULT '0',
 	`nome` VARCHAR(200) NULL DEFAULT NULL,
+	`descricao` VARCHAR(256) NULL DEFAULT NULL,
 	`capa` INT(11) NULL DEFAULT NULL,
 	`galeria` INT(5) NULL DEFAULT NULL,
 	`data` VARCHAR(20) NULL DEFAULT NULL,
@@ -15,7 +16,6 @@ COLLATE='latin1_swedish_ci'
 ENGINE=InnoDB
 AUTO_INCREMENT=1
 ;
-
 
 --
 -- Estrutura da tabela `ll_galeria_fotos`

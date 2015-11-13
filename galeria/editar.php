@@ -33,6 +33,12 @@ $dados = mysql_fetch_array(mysql_query($consulta));
 					</tr>
 				</table>
 			</div>
+			
+			
+			<div>
+				<label>Descrição da galeria</label>
+				<input type="text" value="<?php echo (isset($dados['descricao'])?$dados['descricao']:'')?>" name="descricao" />				
+			</div>
 		</fieldset>
 		
 		<?php

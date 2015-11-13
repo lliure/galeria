@@ -33,6 +33,7 @@ $dados = mysql_fetch_array(mysql_query($consulta));
 					</tr>
 				</table>
 			</div>
+			
 		</fieldset>
 		
 		<?php
